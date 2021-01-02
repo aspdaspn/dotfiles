@@ -119,3 +119,7 @@ fi
 # Set vi-stale or emacs-style (default) editing mode
 set -o vi
 # set -o emacs
+
+# Enable Ctr-L to clear screen in vi mode
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
