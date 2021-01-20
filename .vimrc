@@ -1,3 +1,14 @@
+" Language, encoding and colorscheme
+set fileencodings=ucs-bom,utf-8,cp1251,koi8-r,cp1252,default,latin1
+colorscheme desert
+if has('win32')
+	set langmenu=en_US
+	let $LANG = 'en_US'
+	source $VIMRUNTIME/delmenu.vim
+	source $VIMRUNTIME/menu.vim
+endif
+set spelllang=ru_yo,en_us,de_de
+
 " Specify a directory for plugins and Installation scripts
 " Linux: 
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -19,8 +30,6 @@ call plug#end()
 " Initialize plugin system
 call plug#end()
 
-set fileencodings=ucs-bom,utf-8,cp1251,koi8-r,cp1252,default,latin1
-colorscheme desert
 set number
 set tabstop=2
 set shiftwidth=2
