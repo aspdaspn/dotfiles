@@ -5,7 +5,7 @@
 set fileencodings=ucs-bom,utf-8,cp1251,koi8-r,cp1252,default,latin1
 set encoding=utf-8
 set guifont=consolas:h12
-set fileformat=unix
+set fileformats=unix,dos
 colorscheme desert
 if has('win32')
 	set langmenu=en_US
