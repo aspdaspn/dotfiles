@@ -25,6 +25,7 @@ if has('win32')
 	set writebackup
 endif
 
+" Initialize plugin system
 " Specify a directory for plugins and Installation scripts
 " Linux: 
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -36,14 +37,10 @@ if has('unix')
 endif
 
 if has('win32')
-	call plug#begin('%HOMEPATH%\vimfiles\plugged')
+	call plug#begin('$HOMEDRIVE\$HOMEPATH\vimfiles\plugged')
 endif
-
-call plug#begin()
+" List of plugins
 	Plug 'preservim/nerdtree'
-call plug#end()
-
-" Initialize plugin system
 call plug#end()
 
 " Tabs, indent and line numbers
@@ -57,6 +54,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Set F3 for paste unformatted text
 set pastetoggle=<F3>
+" Press F4 to toggle highlighting on/off, and show current value.
+:noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
