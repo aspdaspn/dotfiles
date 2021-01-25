@@ -43,11 +43,12 @@ endif
 	Plug 'preservim/nerdtree'
 call plug#end()
 
-" Tabs, indent and line numbers
+" Tabs, indent, backspace and line numbers
 set number
 set tabstop=2
 set shiftwidth=2
 set autoindent
+set backspace=indent,eol,start
 
 "Keyboard mapping
 map <C-n> :NERDTreeToggle<CR>
