@@ -41,14 +41,14 @@ if has('win32')
 endif
 " List of plugins
 	Plug 'preservim/nerdtree'
+	Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
-" Tabs, indent, backspace and line numbers
+" Tabs, indent and line numbers
 set number
 set tabstop=2
 set shiftwidth=2
 set autoindent
-set backspace=indent,eol,start
 
 "Keyboard mapping
 map <C-n> :NERDTreeToggle<CR>
