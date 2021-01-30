@@ -1,7 +1,7 @@
 " Execute gVim.exe from WSL
 " sudo ln -s /mnt/c/Program\ Files\ \(x86\)/Vim/vim82/gvim.exe gvim.exe
 
-" Language, encoding and colorscheme
+" Language, mouse support, encoding and colorscheme
 set fileencodings=ucs-bom,utf-8,cp1251,koi8-r,cp1252,default,latin1
 set encoding=utf-8
 set guifont=consolas:h12
@@ -14,6 +14,7 @@ if has('win32')
 	source $VIMRUNTIME/menu.vim
 endif
 set spelllang=ru_yo,en_us,de_de
+set mouse=a
 
 " Set backup directory for Windows
 if has('win32')
