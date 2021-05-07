@@ -52,6 +52,11 @@ set backspace=indent,eol,start
 
 "Keyboard mapping
 map <C-n> :NERDTreeToggle<CR>
+" Moving between splits with Ctrl-[hjkl]
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 "Set F3 for paste unformatted text
 set pastetoggle=<F3>
