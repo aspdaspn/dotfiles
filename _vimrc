@@ -15,6 +15,10 @@ if has('win32')
 endif
 set spelllang=ru_yo,en_us,de_de
 
+" Set split direction
+set splitright
+set splitbelow
+
 " Set backup directory for Windows
 if has('win32')
 	set backup
@@ -45,8 +49,8 @@ call plug#end()
 
 " Tabs, indent, backspace and line numbers
 set number
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set autoindent
 set backspace=indent,eol,start
 
