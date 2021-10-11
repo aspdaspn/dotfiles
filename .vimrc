@@ -45,6 +45,10 @@ set fileformats=unix,dos
 colorscheme gruvbox
 set bg=dark
 
+" Split position
+set splitright
+set splitbelow
+
 if has('win32')
 	set langmenu=en_US
 	let $LANG = 'en_US'
