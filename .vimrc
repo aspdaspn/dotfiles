@@ -29,7 +29,7 @@ endif
     Plug 'derekwyatt/vim-protodef'  " Prototypes from C++ header
     Plug 'Yggdroot/indentLine'      " Indent Levels 
     Plug 'tpope/vim-fugitive'       " Git plugin
-    Plug 'ycm-core/YouCompleteMe'   " YouCompleteMe
+"    Plug 'ycm-core/YouCompleteMe'   " YouCompleteMe
     Plug 'morhetz/gruvbox'          " Colorsheme
 
 call plug#end()
@@ -44,8 +44,9 @@ set guifont=consolas:h12
 set fileformats=unix,dos
 colorscheme gruvbox
 set bg=dark
+set t_ut=       "clearing uses the current background color, it is the TMUX color fix
 
-" Split position
+"Split position
 set splitright
 set splitbelow
 
